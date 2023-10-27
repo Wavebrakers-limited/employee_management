@@ -1,0 +1,74 @@
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;   
+}
+.sidebar{
+    height: 100%;
+    width: 20%;
+    background-color: #86A789;
+    flex-direction: column;
+    display: flex;
+}
+.sidebar .logo{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    color: #86A789;
+    font-size: 3rem;
+    font-weight: 800;
+}
+.sidebar .selection{
+    height:500px;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;   
+}
+.sidebar ul{
+    padding-left: 0;
+    list-style: none;
+    color: whitesmoke;
+    font-size: 2rem;
+}
+.sidebar ul li{
+    margin: 1rem 0;
+    font-weight: 600;
+}
+.userbox{
+    height: 10%;
+    width : 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    border-radius: 50px;
+
+}
+.userbox .user{
+    flex-direction: column;
+    margin-left: 15px;
+}
+.userbox .username{
+    display: flex;
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.userbox .role{ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.userbox .image{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #86A789;
+}
