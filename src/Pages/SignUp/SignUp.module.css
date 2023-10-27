@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;400&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+*{
+    overflow: hidden;
+}
+
+.signUp{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: none;
+    margin: 8rem 5rem;
+}
+.signUp div{
+    width: 90%;
+}
+
+.signUp div h1{
+    font-family:Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.signUp div  hr{
+border-color: #D2E3C8;
+}
+
+.signUpForm{
+    display: flex;
+    margin: 2rem 0;
+    justify-content: space-between;
+}
+
+.signUpForm div{
+    display: flex;
+    flex-direction: column; 
+}
+
+.signUpForm div input,
+.signUpForm div select{
+    height: 40px;
+    width: 80%;
+    padding-left: 35px;
+    padding-right: 10px;
+    border-radius: 17px;
+    border: 3px solid #D2E3C8;
+    background: #FFF;
+    position: relative;
+    cursor: pointer;
+}
+.signUpForm div input[type='date']{
+    width: 50%;
+}
+
+.signUpForm div select{
+    width: 86%;
+    height: 50px;
+    content: '';
+}
+
+.signUpForm div label{
+    position: relative;
+    top: -32px;
+    left: 12px;
+}
+.signUpForm div button{
+    width: 120px;
+    margin-top: 1rem;
+    background-color: #86A789;
+    border: none;
+    color: #FFF;
+    padding: 10px;
+    border-radius:.75rem;
+}
+
+.signUpForm  img{
+    width: 50%;
+}
