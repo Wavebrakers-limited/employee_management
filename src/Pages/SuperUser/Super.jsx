@@ -1,4 +1,4 @@
-import Employee from '../Employee/Employee'
+import Employee from '../Employee_data/Employee'
 import styles from './Super.module.css'
 function Super() {
   return (

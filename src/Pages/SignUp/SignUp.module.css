@@ -69,6 +69,7 @@ border-color: #D2E3C8;
     position: relative;
     top: -32px;
     left: 12px;
+    width: 15px;
 }
 .signUpForm div button{
     width: 120px;

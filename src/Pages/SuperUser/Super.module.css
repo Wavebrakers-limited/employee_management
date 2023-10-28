@@ -38,6 +38,11 @@
 .sidebar ul li{
     margin: 1rem 0;
     font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+}
+.sidebar ul li:active{
+    text-decoration: underline;
 }
 .userbox{
     height: 10%;

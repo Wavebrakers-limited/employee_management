@@ -16,7 +16,7 @@ export default function Welcome() {
             <h1>Welcome <span> WaveBreakers</span></h1>
            <div>
              <button  onClick={()=>{
-              navigate('/signup')
+              navigate('/signin')
              }}>SignIn</button>
            </div>
            <div>

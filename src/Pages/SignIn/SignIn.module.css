@@ -36,12 +36,14 @@ border-color: #D2E3C8;
     border-radius: 17px;
     border: 3px solid #D2E3C8;
     background: #FFF;
+    cursor: pointer;
 
 }
 .signInForm div label{
     position: relative;
     top: -32px;
     left: 12px;
+    width: 15px;
 }
 .signInForm div button{
     width: 120px;
