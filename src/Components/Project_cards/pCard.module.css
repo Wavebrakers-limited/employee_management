@@ -34,13 +34,14 @@
 }
 
 .pCard .status{
-    justify-content: end;
+    justify-content: start;
+    margin-left: 0%;
 }
 
 .pCard .status p{
     text-align: center;
     cursor: pointer;
-    margin: 1rem 3rem;
+    margin: 1rem 1rem;
     background-color: #56ea8f;
     width: 100px;
     border-radius: 20px;
