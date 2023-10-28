@@ -14,7 +14,7 @@ export default function Card() {
         </div>
         <div>
           <h2>Department:</h2>
-          <p>Software</p>
+          <p>Software team -1</p>
         </div>
       </div>
       <button>Check Profile</button>

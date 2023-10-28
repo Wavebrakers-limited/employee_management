@@ -13,6 +13,10 @@ export default function pCard(props) {
         <h2>Deadline</h2>
         <p>{props.date}</p>
       </div>
+      <div>
+        <h2>Deparment</h2>
+        <p>Software team -1</p>
+      </div>
       <div className={styles.status}>
         <p><FaCircle size={10} color='#fff'/>{props.status}</p>
       </div>
