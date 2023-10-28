@@ -15,7 +15,8 @@
     line-height: normal;
 }
 .signIn div  hr{
-border-color: #D2E3C8;
+    border: solid;
+    border-color: #59704d;
 }
 
 .signInForm{

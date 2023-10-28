@@ -29,7 +29,8 @@ input::-webkit-inner-spin-button {
     line-height: normal;
 }
 .signUp div  hr{
-border-color: #D2E3C8;
+    border: solid;
+    border-color: #59704d;
 }
 
 .signUpForm{

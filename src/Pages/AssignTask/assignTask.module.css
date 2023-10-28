@@ -11,7 +11,7 @@
     justify-content: end;
 }
 
-.assignTask div button{
+.createNew button{
     display: flex;
     align-items: center;
     gap: 10px;

@@ -13,7 +13,10 @@
 .card div{
     display: flex;
     align-items: center;
-    gap:2rem;
+    gap:1rem;
+}
+.card div:first-child{
+    width: 400px;
 }
 
 .card div h1{
@@ -22,15 +25,16 @@
 }
 .card div img{
     width: 15%;
-    padding: 2rem 0 0 1rem  ;
+    padding: 2rem 0 0 1rem;
 }
 
-.cardDesignation{
+.card .cardDesignation{
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items:baseline;
     color: rgb(90, 160, 90);
 }
+
 .cardDesignation div{
     gap:.5rem;
 }
