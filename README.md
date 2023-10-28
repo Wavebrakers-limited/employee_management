@@ -37,4 +37,7 @@ We are committed to continuous improvement and plan to add more exciting feature
 - **Attendance System**: Simplify tracking attendance and work hours.
 - **Leave Request Page**: Enable employees to request leaves effortlessly.
 - **Accounts System**: Manage finances and accounts within the application.
+- **Project progress**: At a glance progress of a project
+- **Remarks**: For managers to leave a meaningful observation regarding a project 
+
 
