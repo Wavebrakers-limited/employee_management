@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from './AssignTask.module.css';
+import styles from './assignTask.module.css';
 import { ImPlus } from 'react-icons/im';
 import Card from '../../Components/Project_cards/pCard';
 import { useDisclosure } from '@chakra-ui/react';
