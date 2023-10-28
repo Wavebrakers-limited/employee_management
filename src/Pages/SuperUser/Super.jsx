@@ -1,6 +1,6 @@
-import Employee from '../Employee_data/Employee'
-import AssignTask from '../AssignTask/assignTask'
-import empProfile from '../Employee_data/empProfile'
+// import Employee from '../Employee_data/Employee'
+// import AssignTask from '../AssignTask/assignTask'
+import EmpProfile from '../Employee_data/empProfile'
 import styles from './Super.module.css'
 function Super() {
   return (
@@ -26,7 +26,7 @@ function Super() {
       <div className={styles.container}>
         {/* <Employee/> */}
         {/* <AssignTask/> */}
-        <empProfile/>
+        <EmpProfile/>
         </div>
       
     </div>
