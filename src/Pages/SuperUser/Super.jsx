@@ -7,7 +7,7 @@ function Super() {
     <div className={styles.main}>
       {/* sidebar section */}
       <div className={styles.sidebar}>
-      <div className={styles.logo}>Sandy Cheeks</div>
+      <div className={styles.logo}>WaveBreakers</div>
       <div className={styles.selection}>
          <ul>
               <li>Employee Data</li>
