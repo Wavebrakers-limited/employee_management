@@ -1,5 +1,5 @@
 import styles from './Welcome.module.css'
-import welcome from './assests/welcome.svg'
+import welcome from './assests/Welcome.svg'
 import { useNavigate } from 'react-router-dom'
 
 export default function Welcome() {
