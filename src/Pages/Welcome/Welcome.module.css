@@ -25,9 +25,9 @@
     color: #86A789;
 }
 .Welcome div div button{
-  background-color:#fff;
+  background-color:rgba(90, 160, 90, 0.2);
   height: 70px;
-  width: 150px;
+  width: 600px;
   border-radius: 1rem;
   cursor: pointer;
   font-size: 20px;

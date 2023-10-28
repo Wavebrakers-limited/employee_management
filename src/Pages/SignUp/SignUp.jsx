@@ -1,7 +1,9 @@
 import styles from './SignUp.module.css'
 import {BiSolidUser,BiCalendar,BiConfused,BiPhone} from "react-icons/bi";
 import welcome from "./assests/Welcome.svg"
+import { useNavigate } from 'react-router-dom'
 export default function SignUp() {
+  const navigate=useNavigate()
   return (
     <div className={styles.signUp}>
     <div>
@@ -29,7 +31,9 @@ export default function SignUp() {
               </select><label htmlFor="Designation"><BiConfused color='#86A789'/></label>
               
               
-              <button>Submit</button>
+              <button onClick={()=>{
+                navigate('/signin')
+              }}>SignUp</button>
           </div>
           <img src={welcome} alt="" />
       </div>

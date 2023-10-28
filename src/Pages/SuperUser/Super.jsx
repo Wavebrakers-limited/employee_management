@@ -1,7 +1,9 @@
+import Employee from '../Employee/Employee'
 import styles from './Super.module.css'
 function Super() {
   return (
     <div className={styles.main}>
+      {/* sidebar section */}
       <div className={styles.sidebar}>
       <div className={styles.logo}>Sandy Cheeks</div>
       <div className={styles.selection}>
@@ -17,9 +19,10 @@ function Super() {
             <div className={styles.role}>Manager</div>
         </div>
         </div>  
-        
-
       </div>
+      {/* content section */}
+      <div className={styles.container}><Employee/></div>
+      
     </div>
   )
 }

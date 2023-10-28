@@ -9,6 +9,7 @@
     background-color: #86A789;
     flex-direction: column;
     display: flex;
+    align-items: center;
 }
 .sidebar .logo{
     height: 15%;
@@ -16,9 +17,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: whitesmoke;
+    background-color: white;
     color: #86A789;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 800;
 }
 .sidebar .selection{
@@ -32,7 +33,7 @@
     padding-left: 0;
     list-style: none;
     color: whitesmoke;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .sidebar ul li{
     margin: 1rem 0;
@@ -55,13 +56,14 @@
 .userbox .username{
     display: flex;
     color: #000000;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
 }
 .userbox .role{ 
     width: 100%;
     display: flex;
     justify-content: center;
+    font-size: 0.7rem;
 }
 .userbox .image{
     height: 50px;
@@ -71,4 +73,14 @@
     align-items: center;
     justify-content: center;
     background-color: #86A789;
+}
+.container{
+    height: 100%;
+    width: 80%;
+    background-color:white  ;
+    display: flex;
+    padding: 3rem;
+    align-items: center;
+    justify-content: center;
+    
 }

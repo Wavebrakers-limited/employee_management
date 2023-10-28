@@ -1,7 +1,9 @@
 import styles from './Welcome.module.css'
 import welcome from './assests/welcome.svg'
+import { useNavigate } from 'react-router-dom'
 
 export default function Welcome() {
+  const navigate=useNavigate()
   return (
     <div className={styles.Welcome} >
         <div>
@@ -13,10 +15,14 @@ export default function Welcome() {
         <div>
             <h1>Welcome <span> WaveBreakers</span></h1>
            <div>
-             <button>SignIn</button>
+             <button  onClick={()=>{
+              navigate('/signup')
+             }}>SignIn</button>
            </div>
            <div>
-             <button>SignUp?</button>
+             <button  onClick={()=>{
+              navigate('/signup')
+             }}>SignUp?</button>
            </div>
         </div>
     </div>

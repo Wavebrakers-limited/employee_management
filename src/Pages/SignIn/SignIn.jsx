@@ -2,7 +2,9 @@ import styles from './SignIn.module.css'
 import {BiSolidUser} from "react-icons/bi";
 import {BiSolidLock} from "react-icons/bi"
 import welcome from '../Welcome/assests/Welcome.svg'
+import { useNavigate } from 'react-router-dom'
 export default function SignIn() {
+  const navigate=useNavigate()
   return (
     <div className={styles.signIn}>
       <div>
@@ -13,7 +15,9 @@ export default function SignIn() {
                 <input type="text" id='email' placeholder='Email' /><label htmlFor="email"><BiSolidUser color='#86A789'/></label>
                 <input type="password" id='email' placeholder='Password' /><label htmlFor="password"><BiSolidLock color='#86A789'/></label>
                 <input type="cpassword" id='email' placeholder='Confirm Password' /><label htmlFor="cpassword"><BiSolidLock color='#86A789'/></label>
-                <button>Submit</button>
+                <button onClick={()=>{
+                  navigate('/dashboard')
+                }}>SignIn</button>
             </div>
             <img src={welcome} alt="" />
         </div>
