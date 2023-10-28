@@ -21,6 +21,15 @@ const style = {
   p: 4,
 };
 
+const titlestyle={
+position: 'absolute',
+top: '50%',
+left: '50%',
+color: '#419c62',
+fontSize: '20px',
+fontWeight: '700',
+}
+
 export default function AssignTask() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [title, setTitle] = useState('');
@@ -37,11 +46,11 @@ export default function AssignTask() {
     localStorage.setItem('projects', JSON.stringify(storedProjects));
     onClose();
   };
-  const deleteProject = (index) => {
-    const updatedProjects = [...projects];
-    updatedProjects.splice(index, 1);
-    setProjects(updatedProjects);
-  };
+  // const deleteProject = (index) => {
+  //   const updatedProjects = [...projects];
+  //   updatedProjects.splice(index, 1);
+  //   setProjects(updatedProjects);
+  // };
 
   return (
     <div className={styles.assignTask}>
@@ -51,11 +60,14 @@ export default function AssignTask() {
         </button>
       </div>
       <div className={styles.Container}>
-        {projects.map((project, index) => (
-          <Card key={index} {...project} />
-          // <button onClick={() => deleteProject(index)}>Delete</button>
-        ))}
-      </div>
+  {projects && projects.length > 0 ? (
+    projects.map((project, index) => (
+      <Card key={index} {...project} />
+    ))
+  ) : (
+    <div style={titlestyle}>Assign a project to get started...</div>
+  )}
+</div>
       <Modal open={isOpen} onClose={onClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
         <Box sx={style}>
           <Typography variant="h6" component="h2">
