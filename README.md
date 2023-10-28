@@ -22,7 +22,8 @@ Identify and designate potential managers from your pool of eligible employees.
 Employees can raise a query or a feedback.
 
 ## Screenshots 
-
+<img widith="50" src="https://github.com/Wavebrakers-limited/employee_management/blob/main/Screenshot/Screenshot%201.png?raw=true">
+<img widith="50" src="https://github.com/Wavebrakers-limited/employee_management/blob/main/Screenshot/Screenshot%203.png?raw=true">
 
 ## How to use
 - Head over to https://employee-management-phi.vercel.app/
