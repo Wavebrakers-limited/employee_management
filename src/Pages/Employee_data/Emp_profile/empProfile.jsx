@@ -13,7 +13,7 @@ export default function empProfile() {
         <div className={styles.ContainerContent}>
         <div>
             <h2>Name: </h2>
-            <p>Nandkishor</p>
+            <p>Reo George</p>
         </div>
         <div>
             <h2>Role: </h2>

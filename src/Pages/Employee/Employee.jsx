@@ -5,7 +5,8 @@ import { useRecoilState } from 'recoil';
 import Coming from '../../Components/Coming_Soon/Coming';
 import { useEffect } from 'react';
 import { useAuth } from '../authChecker';
-import { Link } from 'react-router-dom';
+import error404 from '../error404';
+
 export default function Employee() {
   const [selectedTab, setSelectedTab] = useRecoilState(selectedProfileState);
   const handleTabClick = (tabName) => {
@@ -17,8 +18,8 @@ export default function Employee() {
 
   const { isAuthenticated, userRole } = useAuth();
   if (!isAuthenticated || userRole !== 'employee') {
-    return <><div style={{color:'#86A789',top:'50%',left:'28%',position:'absolute',fontSize:"2rem"}}>Error ! You do not have permission to access this page.</div>
-    <div style={{color:'#86A789',top:'57%',left:'28%',position:'absolute',fontSize:"1.4rem"}}>Go back to <Link to="/signin">Signin</Link></div></>}
+    return <error404/>
+  }
 
   return (
     <div className={styles.main}>
@@ -34,7 +35,7 @@ export default function Employee() {
         <div className={styles.userbox}>
           <div className={styles.image}></div>
           <div className={styles.user}>
-            <div className={styles.username}>Rohan Mano</div>
+            <div className={styles.username}>Reo George</div>
             <div className={styles.role}>Employee</div>
           </div>
         </div>
