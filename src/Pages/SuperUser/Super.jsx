@@ -6,7 +6,7 @@ import { selectedProfileState } from '../../../recoilState';
 import { useRecoilState } from 'recoil';
 import EmpProfile from './Emp_profile/empProf';
 import { useAuth } from '../authChecker';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
@@ -30,6 +30,7 @@ const style = {
 function Super() {
   const [selectedTab, setSelectedTab] = useRecoilState(selectedProfileState);
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const Navigate =useNavigate();
   const handleTabClick = (tabName) => {
     setSelectedTab(tabName);
   };
@@ -37,12 +38,14 @@ function Super() {
   const { isAuthenticated, userRole } = useAuth();
   if (!isAuthenticated || userRole !== 'superadmin') {
     return <><div style={{color:'#86A789',top:'50%',left:'28%',position:'absolute',fontSize:"2rem"}}>Error ! You do not have permission to access this page.</div>
-    <div style={{color:'#86A789',top:'57%',left:'28%',position:'absolute',fontSize:"1.4rem"}}>Go back to <Link to="/signin">Signin</Link></div></>}
+    <div style={{color:'#86A789',top:'57%',left:'28%',position:'absolute',fontSize:"1.4rem"}}>Go back to <Link to="/signin">Signin</Link></div></>
+  
+  }
  
  const UserLogout = () => {
   localStorage.clear();
-  window.location.reload();
   onClose();
+  Navigate("/signin")
 }
  
  return (

@@ -10,6 +10,7 @@ import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
 import { useDisclosure } from '@chakra-ui/react';
+import { useNavigate } from 'react-router-dom';
 const style = {
   position: 'absolute',
   top: '50%',
@@ -27,6 +28,7 @@ const style = {
 export default function Employee() {
   const [selectedTab, setSelectedTab] = useRecoilState(selectedProfileState);
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const Navigate = useNavigate();
   const handleTabClick = (tabName) => {
     setSelectedTab(tabName);
   };
@@ -40,8 +42,8 @@ export default function Employee() {
   }
   const UserLogout = () => {
     localStorage.clear();
-    window.location.reload();
     onClose();
+    Navigate("/signin")
   }
   return (
     <div className={styles.main}>

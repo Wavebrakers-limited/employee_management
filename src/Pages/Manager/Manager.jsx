@@ -30,7 +30,7 @@ function Manager() {
   const { isAuthenticated, userRole } = useAuth();
   const [selectedTab, setSelectedTab] = useRecoilState(selectedProfileState);
   const { isOpen, onOpen, onClose } = useDisclosure();
-  // const Navigate = useNavigate();
+  const Navigate = useNavigate();
   console.log(selectedTab);
 
   const handleTabClick = (tabName) => {
@@ -43,8 +43,8 @@ function Manager() {
 
   const UserLogout = () => {
     localStorage.clear();
-    window.location.reload();
     onClose();
+    Navigate("/signin")
   }
   return (
     <div className={styles.main}>

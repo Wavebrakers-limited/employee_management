@@ -164,6 +164,18 @@ function Employee() {
               variant="standard"
               value={age}
             />
+            <TextField
+              sx={{ mb: 2, width: '38ch' }}
+              label="Gender"
+              required
+              InputLabelProps={{
+                shrink: true,
+              }}
+              placeholder='Male/Female'
+              onChange={e => setGender(e.target.value)}
+              variant="standard"
+              value={gender}
+            />
           <Button sx={{ width: '100px', float: 'right' }} onClick={addEmployee} variant="contained">
             Add
           </Button>
