@@ -1,6 +1,6 @@
 import styles from "./empProfile.module.css"
 import profile from "./assests/profile.svg"
-import {RiDeleteBin6Fill} from "react-icons/ri";
+import {IoArrowBackCircleOutline} from "react-icons/io5";
 
 export default function empProfile() {
   return (
@@ -8,7 +8,7 @@ export default function empProfile() {
       <div className={styles.Container} >
         <div>
             <img src={profile} alt="" />
-            <button><RiDeleteBin6Fill size={25} color="red"/></button>
+            <button><IoArrowBackCircleOutline size={35}/></button>
         </div>
         <div className={styles.ContainerContent}>
         <div>
