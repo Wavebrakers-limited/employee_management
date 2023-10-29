@@ -1,5 +1,5 @@
-import styles from "./empProf.module.css"
-import profile from "./assests/profile.svg"
+import styles from "./empProfile.module.css"
+import profile from "../assests/profile.svg"
 import {IoArrowBackCircleOutline} from "react-icons/io5";
 
 export default function empProfile() {
