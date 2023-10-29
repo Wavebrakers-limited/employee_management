@@ -1,4 +1,4 @@
-import styles from './card.module.css'
+import styles from './Card.module.css'
 import welcome from './assests/Welcome.svg'
 import { useRecoilState } from 'recoil';
 import { selectedProfileState } from '../../../recoilState';
