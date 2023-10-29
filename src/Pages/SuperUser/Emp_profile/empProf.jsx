@@ -2,13 +2,21 @@ import styles from "./empProf.module.css"
 import profile from "./assests/profile.svg"
 import {RiDeleteBin6Fill} from "react-icons/ri";
 import {IoArrowBackCircleOutline} from "react-icons/io5";
-
-export default function empProfile() {
-  return (
+import { useRecoilState, useRecoilValue } from "recoil";
+import { Employee_data, Employee_id } from "../../../../recoilState";
+import { selectedProfileState } from "../../../../recoilState";
+export default function EmpProfile() {
+const[selectedProfile , setSelectedProfile]=useRecoilState(selectedProfileState);
+  const Userdata=useRecoilValue(Employee_data);
+  const id=useRecoilValue(Employee_id);
+  const user=Userdata[id];
+    return (
     <div className={styles.empProfile}>
       <div className={styles.Container} >
         <div>
-            <button><IoArrowBackCircleOutline size={35}/></button>
+            <button onClick={()=>{
+              setSelectedProfile("Employee");
+            }}><IoArrowBackCircleOutline size={35}/></button>
             <div className={styles.profile}>
             <img src={profile} alt="" />
             <button><RiDeleteBin6Fill size={25} color="red"/></button>
@@ -17,7 +25,7 @@ export default function empProfile() {
         <div className={styles.ContainerContent}>
         <div>
             <h2>Name: </h2>
-            <p>Nandkishor R</p>
+            <p>{user.name}</p>
         </div>
         <div>
             <h2>Role: </h2>
@@ -29,15 +37,15 @@ export default function empProfile() {
         </div>
         <div>
             <h2>Designation: </h2>
-            <p>Bot Developer</p>
+            <p>{user.designation}</p>
         </div>
         <div>
             <h2>Date of Joining: </h2>
-            <p>12/12/2017</p>
+            <p>{user.date_of_joining}</p>
         </div>
         <div>
             <h2>Phone Number: </h2>
-            <p>198765434</p>
+            <p>{user.phone_number}</p>
         </div>
         
 

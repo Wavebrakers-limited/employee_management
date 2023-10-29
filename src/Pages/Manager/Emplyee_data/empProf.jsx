@@ -3,7 +3,7 @@ import profile from "./assests/profile.svg"
 import {RiDeleteBin6Fill} from "react-icons/ri";
 import {IoArrowBackCircleOutline} from "react-icons/io5";
 
-export default function empProfile() {
+export default function EmpProfile() {
   return (
     <div className={styles.empProfile}>
       <div className={styles.Container} >

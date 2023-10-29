@@ -17,10 +17,14 @@ export const authenticatedState = atom({
   },
   effects_UNSTABLE: [persistAtom],
   });
-  // export const Employee_data = atom({
-  //   key: 'authenticatedState',
-  //   default: {
-  //     isAuthenticated: false,
-  //     userRole: '',
-  //   },
-  //   });
+
+  export const Employee_id = atom({
+    key: 'Id',
+    default: "",
+    effects_UNSTABLE: [persistAtom],
+    });
+    export const Employee_data = atom({
+      key: 'Employee_data',
+      default: [],
+      effects_UNSTABLE: [persistAtom],
+      });

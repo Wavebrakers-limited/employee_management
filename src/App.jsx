@@ -12,7 +12,6 @@ function App() {
 
   return (
     <div>
-
           <Routes>
                 <Route  path='/' element={<Welcome />}></Route>
                 <Route exact path='/signup' element={< SignUp />}></Route>  
