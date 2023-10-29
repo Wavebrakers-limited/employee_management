@@ -1,7 +1,7 @@
 .empProfile{
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 85vh;
     width: 100%;
 }
 
@@ -16,32 +16,35 @@
 
 .empProfile .Container div{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     padding: 0 2rem;
     align-items: start;
 }
+.empProfile .Container div .profile{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0 1rem;
+}
 
-.empProfile .Container div img{
+.empProfile .Container div .profile img{
     width: 15%;
 }
 
-.empProfile .Container div div{
-    display: flex;
-    align-items: center;
-    gap:1rem
-}
-
-.empProfile .Container div div button{
+.empProfile .Container div .profile button{
     cursor: pointer;
 }
+
 .empProfile .Container .ContainerContent{
     flex-direction: column;
     gap: 1rem;
-    padding: 0;
+    padding:0;
 }
-
 .empProfile .Container .ContainerContent div{
     display: flex;
+    flex-direction: row;
     gap: 1.5rem;
     align-items: center;
 }

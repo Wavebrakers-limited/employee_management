@@ -7,11 +7,11 @@ export default function empProfile() {
   return (
     <div className={styles.empProfile}>
       <div className={styles.Container} >
-        <div>
-            <img src={profile} alt="" />
-            <div>
-            <button><RiDeleteBin6Fill size={25} color="red"/></button>
+      <div>
             <button><IoArrowBackCircleOutline size={35}/></button>
+            <div className={styles.profile}>
+            <img src={profile} alt="" />
+            <button><RiDeleteBin6Fill size={25} color="red"/></button>
             </div>     
         </div>
         <div className={styles.ContainerContent}>

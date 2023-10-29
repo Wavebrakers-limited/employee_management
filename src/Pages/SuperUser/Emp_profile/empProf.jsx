@@ -8,16 +8,16 @@ export default function empProfile() {
     <div className={styles.empProfile}>
       <div className={styles.Container} >
         <div>
-            <img src={profile} alt="" />
-            <div>
-            <button><RiDeleteBin6Fill size={25} color="red"/></button>
             <button><IoArrowBackCircleOutline size={35}/></button>
+            <div className={styles.profile}>
+            <img src={profile} alt="" />
+            <button><RiDeleteBin6Fill size={25} color="red"/></button>
             </div>     
         </div>
         <div className={styles.ContainerContent}>
         <div>
             <h2>Name: </h2>
-            <p>Nandkishor</p>
+            <p>Nandkishor R</p>
         </div>
         <div>
             <h2>Role: </h2>
