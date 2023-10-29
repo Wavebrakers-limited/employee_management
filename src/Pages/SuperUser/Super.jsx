@@ -1,5 +1,6 @@
 import Employee from '../Employee_data/Employee';
 import AssignTask from '../AssignTask/assignTask';
+import Coming from '../../Components/Coming_Soon/Coming'
 import styles from './Super.module.css';
 import { selectedProfileState } from '../../../recoilState';
 import { useRecoilState } from 'recoil';
@@ -22,6 +23,7 @@ function Super() {
             <li onClick={() => handleTabClick('Employee')}>Employee Data</li>
             <li onClick={() => handleTabClick('AssignTask')}>Assign Duty</li>
             <li onClick={() => handleTabClick('ManagerSelect')}>Manager Select</li>
+            <li onClick={()=>handleTabClick('LeaveApproval')}>Leave Approval</li>
           </ul>
         </div>
         <div className={styles.userbox}>
@@ -38,6 +40,7 @@ function Super() {
         {selectedTab === 'AssignTask' && <AssignTask />}
         {selectedTab === 'ManagerSelect' && <Employee />}
         {selectedTab === 'EmpProfile' && <EmpProfile />}
+        {selectedTab === 'LeaveApproval' && <Coming />}
       </div>
     </div>
   );
