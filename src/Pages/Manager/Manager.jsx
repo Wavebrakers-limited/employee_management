@@ -4,9 +4,14 @@ import AssignTask from '../AssignTask/assignTask';
 import { selectedProfileState } from '../../../recoilState';
 import { useRecoilState } from 'recoil';
 import Coming from '../../Components/Coming_Soon/Coming';
+import EmpProfile from '../../Pages/Manager/Emplyee_data/empProf'
 
-export default function Manager() {
+
+function Manager() {
   const [selectedTab, setSelectedTab] = useRecoilState(selectedProfileState);
+  const handleTabClick = (tabName) => {
+    setSelectedTab(tabName);
+  };
 
   return (
     <div className={styles.main}>
@@ -15,16 +20,16 @@ export default function Manager() {
         <div className={styles.logo}>WaveBreakers</div>
         <div className={styles.selection}>
           <ul>
-            <li onClick={() => setSelectedTab('Employee Data')}>Employee Data</li>
-            <li onClick={() => setSelectedTab('Assign Duty')}>Assign Duty</li>
-            <li onClick={() => setSelectedTab('Leave Approval')}>Leave Approval</li>
-            <li onClick={() => setSelectedTab('Leave Sanction')}>Leave Sanction</li>
+            <li onClick={() =>  handleTabClick('Employee Data')}>Employee Data</li>
+            <li onClick={() =>  handleTabClick('Assign Duty')}>Assign Duty</li>
+            <li onClick={() =>  handleTabClick('Leave Approval')}>Leave Approval</li>
+            <li onClick={() =>  handleTabClick('Leave Sanction')}>Leave Sanction</li>
           </ul>
         </div>
         <div className={styles.userbox}>
           <div className={styles.image}></div>
           <div className={styles.user}>
-            <div className={styles.username}>Rohan Mano</div>
+            <div className={styles.username}>Nandkishor</div>
             <div className={styles.role}>Manager</div>
           </div>
         </div>
@@ -35,8 +40,11 @@ export default function Manager() {
         {selectedTab === 'Assign Duty' && <AssignTask />}
         {selectedTab === 'Leave Approval' && <Coming />}
         {selectedTab === 'Leave Sanction' && <Coming />}
+        {selectedTab === 'EmpProfile' && <EmpProfile />}
         
       </div>
     </div>
   );
 }
+
+export default Manager;
