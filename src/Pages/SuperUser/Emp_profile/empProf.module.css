@@ -24,10 +24,10 @@
 .empProfile .Container div img{
     width: 15%;
 }
+
 .empProfile .Container div button{
     cursor: pointer;
 }
-
 .empProfile .Container .ContainerContent{
     flex-direction: column;
     gap: 1rem;

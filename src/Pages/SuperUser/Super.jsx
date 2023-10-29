@@ -1,6 +1,6 @@
 // import Employee from '../Employee_data/Employee'
 // import AssignTask from '../AssignTask/assignTask'
-import EmpProfile from '../Employee_data/empProfile'
+import EmpProfile from './Emp_profile/empProf'
 import styles from './Super.module.css'
 function Super() {
   return (
