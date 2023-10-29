@@ -3,7 +3,7 @@ import AssignTask from '../AssignTask/assignTask';
 import styles from './Super.module.css';
 import { selectedProfileState } from '../../../recoilState';
 import { useRecoilState } from 'recoil';
-import EmpProfile from '../Employee_data/empProfile';
+import EmpProfile from './Emp_profile/empProf';
 
 function Super() {
   const [selectedTab, setSelectedTab] = useRecoilState(selectedProfileState);
