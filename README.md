@@ -31,6 +31,7 @@ Log in using one of these emails (each corresponds to a role in the website):
 - employee@gmail.com
 - manager@gmail.com
 - superadmin@gmail.com
+
 The passwords for all the above is 12345.
 
 
