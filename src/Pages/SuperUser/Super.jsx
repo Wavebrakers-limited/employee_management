@@ -33,7 +33,7 @@ function Super() {
         <div className={styles.userbox}>
           <div className={styles.image}></div>
           <div className={styles.user}>
-            <div className={styles.username}>Rohan Mano</div>
+            <div className={styles.username}>Noel Paul George</div>
             <div className={styles.role}>SuperAdmin</div>
           </div>
         </div>

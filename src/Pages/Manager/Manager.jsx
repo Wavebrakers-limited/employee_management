@@ -5,11 +5,16 @@ import { selectedProfileState } from '../../../recoilState';
 import { useRecoilState } from 'recoil';
 import Coming from '../../Components/Coming_Soon/Coming';
 import { useAuth } from '../authChecker';
-import { Link } from 'react-router-dom';
-export default function Manager() {
+import { Link } from 'react-router-dom';import EmpProfile from '../../Pages/Manager/Emplyee_data/empProf'
+
+
+function Manager() {
   const { isAuthenticated, userRole } = useAuth();
   const [selectedTab, setSelectedTab] = useRecoilState(selectedProfileState);
   console.log(selectedTab);
+  const handleTabClick = (tabName) => {
+    setSelectedTab(tabName);
+  };
 
   if (!isAuthenticated || userRole !== 'manager') {
     return <><div style={{color:'#86A789',top:'50%',left:'28%',position:'absolute',fontSize:"2rem"}}>Error ! You do not have permission to access this page.</div>
@@ -21,16 +26,16 @@ export default function Manager() {
         <div className={styles.logo}>WaveBreakers</div>
         <div className={styles.selection}>
           <ul>
-            <li onClick={() => setSelectedTab('Employee')}>Employee Data</li>
-            <li onClick={() => setSelectedTab('Assign Duty')}>Assign Duty</li>
-            <li onClick={() => setSelectedTab('Leave Approval')}>Leave Approval</li>
-            <li onClick={() => setSelectedTab('Leave Sanction')}>Leave Sanction</li>
+            <li onClick={() =>  handleTabClick('Employee Data')}>Employee Data</li>
+            <li onClick={() =>  handleTabClick('Assign Duty')}>Assign Duty</li>
+            <li onClick={() =>  handleTabClick('Leave Approval')}>Leave Approval</li>
+            <li onClick={() =>  handleTabClick('Leave Sanction')}>Leave Sanction</li>
           </ul>
         </div>
         <div className={styles.userbox}>
           <div className={styles.image}></div>
           <div className={styles.user}>
-            <div className={styles.username}>Rohan Mano</div>
+            <div className={styles.username}>Nandkishor</div>
             <div className={styles.role}>Manager</div>
           </div>
         </div>
@@ -42,8 +47,11 @@ export default function Manager() {
         {selectedTab === 'Assign Duty' && <AssignTask />}
         {selectedTab === 'Leave Approval' && <Coming />}
         {selectedTab === 'Leave Sanction' && <Coming />}
+        {selectedTab === 'EmpProfile' && <EmpProfile />}
         
       </div>
     </div>
   );
 }
+
+export default Manager;

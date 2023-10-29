@@ -7,7 +7,7 @@ export default function empProfile() {
   return (
     <div className={styles.empProfile}>
       <div className={styles.Container} >
-        <div>
+      <div>
             <button><IoArrowBackCircleOutline size={35}/></button>
             <div className={styles.profile}>
             <img src={profile} alt="" />
@@ -17,7 +17,7 @@ export default function empProfile() {
         <div className={styles.ContainerContent}>
         <div>
             <h2>Name: </h2>
-            <p>Nandkishor R</p>
+            <p>Nandkishor</p>
         </div>
         <div>
             <h2>Role: </h2>
