@@ -1,4 +1,4 @@
-import Card from '../../Components/Employee_card/card'
+import Card from '../../Components/Employee_card/Card'
 import styles from './Employee.module.css'
 import { ImPlus } from 'react-icons/im';
 
