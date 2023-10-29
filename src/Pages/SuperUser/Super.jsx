@@ -27,8 +27,7 @@ function Super() {
         {/* <Employee/> */}
         {/* <AssignTask/> */}
         <EmpProfile/>
-        </div>
-      
+        </div> 
     </div>
   )
 }

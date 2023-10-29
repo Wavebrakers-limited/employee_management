@@ -1,0 +1,91 @@
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;   
+}
+.sidebar{
+    height: 100%;
+    width: 20%;
+    background-color: #86A789;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.sidebar .logo{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #86A789;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.sidebar .selection{
+    height:500px;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;   
+}
+.sidebar ul{
+    padding-left: 0;
+    list-style: none;
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+.sidebar ul li{
+    margin: 1rem 0;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+}
+.sidebar ul li:active{
+    text-decoration: underline;
+}
+.userbox{
+    height: 10%;
+    width : 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    border-radius: 50px;
+
+}
+.userbox .user{
+    flex-direction: column;
+    margin-left: 15px;
+}
+.userbox .username{
+    display: flex;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.userbox .role{ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 0.7rem;
+}
+.userbox .image{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #86A789;
+}
+.container{
+    height: 100%;
+    width: 80%;
+    background-color:white  ;
+    display: flex;
+    padding: 3rem;
+    align-items: center;
+    justify-content: center;
+    
+}
