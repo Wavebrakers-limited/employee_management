@@ -1,6 +1,13 @@
 import styles from './card.module.css'
 import welcome from './assests/Welcome.svg'
+import { useRecoilState } from 'recoil';
+import { selectedProfileState } from '../../../recoilState';
 export default function Card() {
+  const [selectedProfile, setSelectedProfile] = useRecoilState(selectedProfileState);
+  
+  const selectProfile= ()=>{
+    setSelectedProfile('EmpProfile')
+  }
   return (
     <div className={styles.card}>
       <div>
@@ -17,7 +24,7 @@ export default function Card() {
           <p>Software team -1</p>
         </div>
       </div>
-      <button>Check Profile</button>
+      <button onClick={selectProfile}>Check Profile</button>
     </div>
   )
 }

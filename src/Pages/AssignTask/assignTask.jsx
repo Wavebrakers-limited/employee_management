@@ -94,7 +94,7 @@ export default function AssignTask() {
             <TextField
               sx={{ mb: 2, width: '38ch' }}
               label="Deadline"
-              placeholder="DD/MM/YYYY"
+              required
               type="date"
               variant="standard"
               onChange={e => setDate(e.target.value)}

@@ -1,14 +1,14 @@
 import styles from "./empProfile.module.css"
 import profile from "./assests/profile.svg"
-import {RiDeleteBin6Fill} from "react-icons/ri";
+// import {RiDeleteBin6Fill} from "react-icons/ri";
 
-export default function empProfile() {
+export default function EmpProfile() {
   return (
     <div className={styles.empProfile}>
       <div className={styles.Container} >
         <div>
             <img src={profile} alt="" />
-            <button><RiDeleteBin6Fill size={25} color="red"/></button>
+            {/* <button><RiDeleteBin6Fill size={25} color="red"/></button> */}
         </div>
         <div className={styles.ContainerContent}>
         <div>

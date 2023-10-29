@@ -15,7 +15,7 @@ export default function SignIn() {
                 <input type="text" id='email' placeholder='Email' /><label htmlFor="email"><BiSolidUser color='#86A789'/></label>
                 <input type="cpassword" id='email' placeholder='Confirm Password' /><label htmlFor="cpassword"><BiSolidLock color='#86A789'/></label>
                 <button onClick={()=>{
-                  navigate('/dashboard')
+                  navigate('/dashboard/super')
                 }}>SignIn</button>
             </div>
             <img src={welcome} alt="" />
