@@ -25,7 +25,13 @@
     width: 15%;
 }
 
-.empProfile .Container div button{
+.empProfile .Container div div{
+    display: flex;
+    align-items: center;
+    gap:1rem
+}
+
+.empProfile .Container div div button{
     cursor: pointer;
 }
 .empProfile .Container .ContainerContent{

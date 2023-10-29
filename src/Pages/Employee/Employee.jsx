@@ -16,7 +16,7 @@ export default function Employee() {
       <div className={styles.image}></div>
       <div className={styles.user}>
           <div className={styles.username}>Rohan Mano</div>
-          <div className={styles.role}>Manager</div>
+          <div className={styles.role}>Employee</div>
       </div>
       </div>  
     </div>
