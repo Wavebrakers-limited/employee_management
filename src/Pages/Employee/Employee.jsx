@@ -5,7 +5,7 @@ import { useRecoilState } from 'recoil';
 import Coming from '../../Components/Coming_Soon/Coming';
 import { useEffect } from 'react';
 import { useAuth } from '../authChecker';
-import error404 from '../error404';
+import Error404 from '../error404';
 
 export default function Employee() {
   const [selectedTab, setSelectedTab] = useRecoilState(selectedProfileState);
@@ -18,7 +18,7 @@ export default function Employee() {
 
   const { isAuthenticated, userRole } = useAuth();
   if (!isAuthenticated || userRole !== 'employee') {
-    return <error404/>
+    return <Error404/>
   }
 
   return (
