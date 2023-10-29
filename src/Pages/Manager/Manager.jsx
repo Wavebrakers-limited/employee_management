@@ -4,10 +4,16 @@ import AssignTask from '../AssignTask/assignTask';
 import { selectedProfileState } from '../../../recoilState';
 import { useRecoilState } from 'recoil';
 import Coming from '../../Components/Coming_Soon/Coming';
-
+import { useAuth } from '../authChecker';
+import { Link } from 'react-router-dom';
 export default function Manager() {
+  const { isAuthenticated, userRole } = useAuth();
   const [selectedTab, setSelectedTab] = useRecoilState(selectedProfileState);
+  console.log(selectedTab);
 
+  if (!isAuthenticated || userRole !== 'manager') {
+    return <><div style={{color:'#86A789',top:'50%',left:'28%',position:'absolute',fontSize:"2rem"}}>Error ! You do not have permission to access this page.</div>
+    <div style={{color:'#86A789',top:'57%',left:'28%',position:'absolute',fontSize:"1.4rem"}}>Go back to <Link to="">Signin</Link></div></>}
   return (
     <div className={styles.main}>
       {/* sidebar section */}
@@ -15,7 +21,7 @@ export default function Manager() {
         <div className={styles.logo}>WaveBreakers</div>
         <div className={styles.selection}>
           <ul>
-            <li onClick={() => setSelectedTab('Employee Data')}>Employee Data</li>
+            <li onClick={() => setSelectedTab('Employee')}>Employee Data</li>
             <li onClick={() => setSelectedTab('Assign Duty')}>Assign Duty</li>
             <li onClick={() => setSelectedTab('Leave Approval')}>Leave Approval</li>
             <li onClick={() => setSelectedTab('Leave Sanction')}>Leave Sanction</li>
@@ -31,7 +37,8 @@ export default function Manager() {
       </div>
       {/* content section */}
       <div className={styles.container}>
-        {selectedTab === 'Employee Data' && <Employee />}
+
+        {selectedTab === 'Employee' && <Employee />}
         {selectedTab === 'Assign Duty' && <AssignTask />}
         {selectedTab === 'Leave Approval' && <Coming />}
         {selectedTab === 'Leave Sanction' && <Coming />}
