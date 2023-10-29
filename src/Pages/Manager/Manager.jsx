@@ -26,7 +26,7 @@ function Manager() {
         <div className={styles.logo}>WaveBreakers</div>
         <div className={styles.selection}>
           <ul>
-            <li onClick={() =>  handleTabClick('Employee Data')}>Employee Data</li>
+            <li onClick={() =>  handleTabClick('Employee')}>Employee Data</li>
             <li onClick={() =>  handleTabClick('Assign Duty')}>Assign Duty</li>
             <li onClick={() =>  handleTabClick('Leave Approval')}>Leave Approval</li>
             <li onClick={() =>  handleTabClick('Leave Sanction')}>Leave Sanction</li>
