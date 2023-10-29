@@ -26,8 +26,13 @@ Employees can raise a query or a feedback.
 <img widith="50" src="https://github.com/Wavebrakers-limited/employee_management/blob/main/Screenshot/Screenshot%204.png?raw=true">
 
 ## How to use
-- Head over to https://employee-management-phi.vercel.app/
-- Log in (roles are assigned to emails that a user uses to log in)
+Head over to https://employee-management-phi.vercel.app/
+Log in using one of these emails (each corresponds to a role in the website):
+- employee@gmail.com
+- manager@gmail.com
+- superadmin@gmail.com
+
+The passwords for all the above is 12345.
 
 
 ## Future Features
